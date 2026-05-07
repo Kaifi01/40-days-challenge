@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+
+/*Navbar satrt here */
+.navbar{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* navbar end here */
+
+/*hero start here */
+.hero{
+    height: 400px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.hero-content p{
+    margin-bottom: 20px;
+}
+.hero-content  button{
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* hero end here */
+
+/* card start here */
+.cards-section{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.card{
+      background: #f1f1f1;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+}
+/* card end here */
+
+/*footer start here */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/*footer end here */
+
+
+@media (max-width:768px) {
+     /* Navbar column */
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+     /* Cards column */
+     .cards-section{
+        grid-template-columns: 1fr;
+     }
+       /* Hero text smaller */
+       .hero-content h1{
+        font-size: 35px;
+       }
+}
