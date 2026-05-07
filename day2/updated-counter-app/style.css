@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+section{
+    background-color: yellow;
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.countshow{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.butdis{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.butdis button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.butdis button:hover{
+    opacity: 0.8;
+}
