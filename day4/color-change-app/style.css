@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     margin-top: 50px;
+}
+#box{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+     margin-bottom: 20px;
+  transition: 0.3s;
+}
+button{
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+.active {
+  transform: scale(1.1);
+  border: 2px solid black;
+  font-weight: bold;
+}
