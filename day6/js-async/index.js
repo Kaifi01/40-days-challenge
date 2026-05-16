@@ -1,71 +1,66 @@
-//after 2 scoend message show
-// setTimeout(()=>{
-//  console.log("hi");
- 
-// },2000)
+// //message show after 2 scoend
+// const btn=document.querySelector(".btn");
+// const prag=document.querySelector(".prag");
 
+// btn.addEventListener("click",()=>{
+//    setTimeout(()=>{
+//   prag.innerHTML="hello kaifi"
+//    },2000)
+// })
 
-// setTimeout(display,2000);
-// function display(){
-//     console.log("display function");
-    
-// }
-// const save=document.querySelector(".save-btn");
-// const message=document.querySelector(".message");
-// save.addEventListener("click",saveuser);
-// function saveuser(){
-//     message.textContent="user registrtion sucessfully";
-//     setTimeout(() => {
-//          message.textContent="";
-//     }, 2000);
-// }
-
-//set interval
-// const save=document.querySelector(".save-btn");
-// const message=document.querySelector(".message");
-
-// save.addEventListener("click",dispalycount);
-// function dispalycount(){
-//        let count=0;
-//     message.textContent=count;
-//     setInterval(()=>{
-//     count++
-//  message.textContent=count
-//     },2000)
-// }
-
-
-//callback and higher order function
-// function greet(callback){
-//    callback();
-// }
-// function name(){
-//     console.log("my name is kaifi ali mallick");
-    
-// }
-// greet(name)
-
-//promise
-
-
-// const task=new Promise((resolve,reject)=>{
-//     let completed=true;
-//     if (completed) {
-//          resolve("Login sucessfull")
+//promise create
+// const task1= new Promise((resolve,reject)=>{
+//     const task1completed=true;
+//     if (task1completed) {
+//          resolve("tas1 comleted")
 //     }else{
-//         reject("login failur")
+//         reject("not completed")
 //     }
 // })
-// task.then((res)=>{
+
+// const task2= new Promise((resolve,reject)=>{
+//     const task2completed=false;
+//     if (task2completed) {
+//          resolve("task2 comleted")
+//     }else{
+//         reject("not completed")
+//     }
+// })
+// const task3= new Promise((resolve,reject)=>{
+//     const task3completed=true;
+//     if (task3completed) {
+//          resolve("task2 comleted")
+//     }else{
+//         reject("not completed")
+//     }
+// })
+
+
+// task1.then((res)=>{
+//     console.log(res);
+//      return task2
+// }).then((res)=>{
+// console.log(res);
+// return task3
+
+// }).then((res)=>{
 //     console.log(res);
     
-// })
-// console.log("kaifi");
-//Api data console log with fetch
-// async function getdata() {
-//     const res=await fetch("https://randomuser.me/api/");
-//     const res1=res.json();
-//     console.log(res1);
+// }).catch((err)=>{
+//     console.log(err);
     
-// }
-//  getdata()
+// })
+
+//Fetch with api data
+// fetch("https://jsonplaceholder.typicode.com/users/1")
+// .then((res)=>{
+//   let res1=res.json();
+//   return res1
+    
+// }).then((data)=>{
+//     console.log(data);
+    
+// }).catch((err)=>{
+//     console.log(err);
+    
+// })
